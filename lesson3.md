@@ -39,7 +39,7 @@ int courseNumber = 7;
 ```Java
 float mathAverage = 89.3;
 ```
-* `double`: The **double** data type is similar to `float` but has a much larger capacity. This is because the memory required for `double` is _double_ that of `float`. The capacity of double is approximately 1.8 * 10^308, with 15 significant decimal digits. That is absurdly precise.
+* `double`: The **double** data type is similar to `float` but has a much larger capacity. This is because the memory required for `double` is _double_ that of `float`. The capacity of double is approximately ±1.8 * 10^308, with 15 significant decimal digits. That is absurdly precise.
   * The size of `double` is 8 bytes.
 
 * `char`: The **character** data type can store single characters that are within the [Unicode Standard](https://en.wikipedia.org/wiki/Unicode). Unicode is the global standard for text in software.
@@ -81,6 +81,16 @@ String i;
 ```
 #### Default Values of Java Data Types:
 If you declare variables but don't assign a value to them, the variables will be left with their default values.
-Below is a chart of data types along with the default values:
-Data Type | Default Value
---- | --- | ---
+Below is a chart of data types along with the sizes, default values, and ranges:
+
+Data type | Size (bytes) | Default Value | Range
+--- | --- | --- | ---
+byte | 1 | `0` | -128 to 127
+short | 2 | `0` | -32,768 to 32,767
+int | 4 | `0` | -2,147,483,648 to 2,147,483, 647
+long | 8 | `0` | approx. ±9.223 * 10^18 (whole numbers)
+float | 4 | `0.0` | approx. ±3.4 * 10^38 (6-7 decimal digits) 
+double | 8 | `0.0` | approx. ±1.8 * 10^308 (15 decimal digits)
+char | 2 | `'\u0000'` | [See UTF-16](https://unicode.org/faq/utf_bom.html)
+boolean | N/A | `false` | true or false
+String | N/A | `null` | N/A
