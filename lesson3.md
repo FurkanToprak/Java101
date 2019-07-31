@@ -94,3 +94,7 @@ double | 8 | `0.0` | approx. ±1.8 * 10^308 (15 decimal digits)
 char | 2 | `'\u0000'` | [See UTF-16](https://unicode.org/faq/utf_bom.html)
 boolean | N/A | `false` | true or false
 String | N/A | `null` | N/A
+
+**Notes:**
+* We'll learn more about `null` later.
+* `'\u0000'` is called the _null character_. Do not confuse this with `null`. We'll learn more about both later.
