@@ -29,20 +29,22 @@ The program knew the necessary memory because we specified `a`'s data type as an
 * `int`: The **integer** data type also stores whole numbers. This is the most popular data type for storing whole numbers.
   * The range of `int` is from -2,147,483,648 and 2,147,483,647, inclusive.
   * Let's say you wanted to make an app that stored a user's grades. If you wanted to store the number of courses the user is taking, you would store it within an `int` object because courses are counted with whole numbers (you can't take 0.23 of a class!).
-  * The size of `int` is 4 bytes. (See `byte` for more.)
+  * The size of `int` is 4 bytes.
 ```Java
 int courseNumber = 7;
 ```
-  * The size of `short` is 2 bytes.
-* `long`: The **long** data type also stores whole numbers. The range of `long` is from	-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807, inclusive.
+* `long`: The **long** data type also stores whole numbers. 
+  * The range of `long` is from	-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807, inclusive.
   * The size of `long` is 8 bytes.
-* `float`: The **float** data type can store numbers that contain decimal points.
+* `float`: The **float** data type can store numbers that contain decimal points. `float` is the most popular data type for storing decimals. `float` is short for [_floating point number_](https://www.youtube.com/watch?v=PZRI1IfStY0).
   * If you wanted to store the numerical grade that the user had in a class, you would use a float.
+  * The range of float is approximately ±3.4 * 10^38, with 6-7 significant decimal digits.
   * The size of `float` is 4 bytes.
 ```Java
 float mathAverage = 89.3;
 ```
-* `double`: The **double** data type is similar to `float` but has a much larger capacity. This is because the memory required for `double` is _double_ that of `float`. The capacity of double is approximately ±1.8 * 10^308, with 15 significant decimal digits. That is absurdly precise.
+* `double`: The **double** data type is similar to `float` but has a much larger capacity. This is because the memory required for `double` is _double_ that of `float`. 
+  * The capacity of double is approximately ±1.8 * 10^308, with 15 significant decimal digits. That is absurdly precise.
   * The size of `double` is 8 bytes.
 
 * `char`: The **character** data type can store single characters that are within the [Unicode Standard](https://en.wikipedia.org/wiki/Unicode). Unicode is the global standard for text in software.
@@ -99,7 +101,7 @@ boolean | N/A | `false` | true or false
 String | N/A | `null` | N/A
 
 **Notes:**
-* We'll learn more about `null` later.
+* We'll learn more about `null` later. For now, you can think of it as the _absence_ of data.
 * `'\u0000'` is called the _null character_. Do not confuse this with `null`. We'll learn more about both later.
 ### Assignment:
 You can assign a value to a variable as many times as you'd like.
