@@ -30,4 +30,5 @@ class HelloWorld {
 The **terminal** should pop up with the following output:
 `Hello world!`.
   * The **terminal** is software that allows us to input information into programs and also outputs the information produced by programs.
+  * Now you’ll notice, this code looks a bit odd. It doesn’t look like a sentence you would read out of a book. This is because programming languages have something called syntax. Syntax means to write code in such a way that our computer will understand what we’re doing.
   * While you may not know what that odd mess of code above exactly does or means, we will understand more next lesson.
