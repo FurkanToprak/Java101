@@ -21,8 +21,8 @@ Don't hesitate to contact me if any of this material confuses you or you have an
 email: [furkancemaltoprak@gmail.com](mailto:furkancemaltoprak@gmail.com)
 
 ## Other resources:
-[Codecademy](https://www.codecademy.com)
-[YouTube- Caleb Curry](https://www.youtube.com/playlist?list=PL_c9BZzLwBRKIMP_xNTJxi9lIgQhE51rF)
+[Codecademy](https://www.codecademy.com)<br>
+[YouTube- Caleb Curry](https://www.youtube.com/playlist?list=PL_c9BZzLwBRKIMP_xNTJxi9lIgQhE51rF)<br>
 [Beginner's Book](https://beginnersbook.com/)
 
 ## License:
