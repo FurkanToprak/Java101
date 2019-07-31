@@ -4,3 +4,4 @@
 ### Declaring
 ### Instantiation
 ### Initialization
+## Scope
