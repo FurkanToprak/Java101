@@ -35,31 +35,52 @@ int courseNumber = 7;
   * The size of `long` is 8 bytes.
 * `float`: The **float** data type can store numbers that contain decimal points.
   * If you wanted to store the numerical grade that the user had in a class, you would use a float.
+  * The size of `float` is 4 bytes.
 ```Java
 float mathAverage = 89.3;
 ```
-
 * `double`: The **double** data type is similar to `float` but has a much larger capacity. This is because the memory required for `double` is _double_ that of `float`. The capacity of double is approximately 1.8 * 10^308, with 15 significant decimal digits. That is absurdly precise.
+  * The size of `double` is 8 bytes.
 
 * `char`: The **character** data type can store single characters that are within the [Unicode Standard](https://en.wikipedia.org/wiki/Unicode). Unicode is the global standard for text in software.
   * If you wanted to store the letter grade for one of the courses the user is taking you would use a `char`. Because letter grades can only be displayed as `A`, `B`, `C`, `D`, or `F`, it makes sense to store it within a `char` variable.
   * When assigning a character, be sure to encapsulate the specific character in single quotations. 
   * Whether a character is capital or not matters! In Java, `'A'` and `'a'` are different `char`s!
+  * The size of `char` is 2 bytes.
 ```Java
 char mathLetter = 'A';
 ```
 * `boolean`: The **Boolean** data type can store only two values, `true` or `false`.
-  * If you wanted to know if the user is passing all of their classes, you would use a boolean. This is because you can only pass or fail a class. In other words, your passing status can only be `true` or `false`. 
+  * If you wanted to know if the user is passing all of their classes, you would use a boolean. This is because you can only pass or fail a class. In other words, your passing status can only be `true` or `false`.
+  * The size of `boolean` is not defined precisely.
 ```Java
 boolean isPassing = true;
 ```
-* `byte`, `short`, and `long`: These data types are used for storing numbers in more technical ways. You don't need to know anything about them for now.
 ### Non-primitive Data Types:
-All you need to know for non-primitive data types for now
+All you need to know for non-primitive data types for now is the `String`.
+* `String`: The **string** data type is used to store words and multiple characters together. The data type is named after it literally being a _string_ of `char`s appended together.
+  * If you wanted to store the user's name, you'd use a `String`.
+  * An empty String uses 40 bytes. The memory usage of the String increases with the number of characters contained within. This is largely unimportant for our purposes.
+```Java
+String userName = "John Doe";
+```
 ## Putting it together:
 ### Declaration:
 Sometimes, you may not know the value of a variable instantly but will later compute it. If this is the case, you must declare a variable. **Declaration** is telling the program to reserve memory under a variable name with a specific data type.
 ```Java
 // The format is [data type] [variable name]
-
+byte a;
+short b;
+int c;
+long d;
+float e;
+double f;
+char g;
+boolean h;
+String i;
 ```
+#### Default Values of Java Data Types:
+If you declare variables but don't assign a value to them, the variables will be left with their default values.
+Below is a chart of data types along with the default values:
+Data Type | Default Value
+--- | --- | ---
