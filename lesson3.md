@@ -113,7 +113,8 @@ Here's how to declare and instantiate all in the same line:
 String i = "I know what I want this string to be.";
 ```
 ## Homework:
-Tell me about yourself using code! Here's an example:
+Tell me about yourself using code! Here's an example:<br>
+**AboutMe.java**
 ```Java
 /*
 This program will tell you the following:
@@ -123,9 +124,19 @@ If I love coding
 The money I have in my wallet (Please don't mug me)
 My middle initial
 */
-String myName = "Furkan Toprak";
-int myAge = 19; // It's my birthday the day I'm writing this! Don't forget to add comments like this one.
-boolean lovesCoding = true;
-float myWallet = 34.12;
-char middleInitial = 'C';
+class AboutMe {
+    public static void main(String[] args) {
+        // Let's declare and instantiate some variables.
+        String myName = "Furkan Toprak";
+        int myAge = 19; // It's my birthday the day I'm writing this! Don't forget to add comments like this one.
+        boolean lovesCoding = true;
+        float myWallet = 34.12;
+        char middleInitial = 'C';
+        // Now let's print them.
+        System.out.println(myAge);
+        System.out.println(lovesCoding);
+        System.out.println(myWallet);
+        System.out.println(middleInitial);
+    }
+}
 ```
