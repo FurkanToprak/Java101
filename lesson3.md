@@ -98,3 +98,15 @@ String | N/A | `null` | N/A
 **Notes:**
 * We'll learn more about `null` later.
 * `'\u0000'` is called the _null character_. Do not confuse this with `null`. We'll learn more about both later.
+### Assignment:
+You can assign a value to a variable as many times as you'd like.
+```Java
+String i;
+i = "Oh man";
+i = "--Oh gee man";
+i = "I'm really indecisive, what should I name this?";
+```
+Here's how to declare and instantiate all in the same line:
+```Java
+String i = "I know what I want this string to be.";
+```
