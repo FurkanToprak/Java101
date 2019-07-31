@@ -38,3 +38,33 @@ This line of code prints out `Hello, World!` to the terminal. You may be wonderi
 **Notes**:
 * If you'll notice, this looks different than the previous code. This line of code does not have any curly braces and ends with a semicolon. Every line of code in Java (other than methods, classes, and a couple other exceptions) ends with `;`. This syntax tells our interpreter that a line of code or specific instruction has ended.
 * By now, you might have noticed that we indent code after every curly brace. This is to organize our code. Please keep in mind that each indentation is four spaces or one tab. Please pick one of the two and consistently use it. It doesn't matter which one you pick as long as you're consistent.
+### Comments
+Often times, it's useful to annotate your code. In order to be able to make comments about your code, without affecting the rest of the code, we put either use single- or multi- line comments.
+#### Single-line comments:
+Let's say we wanted to add a comment to the previous code- maybe information about what the code does. If we can fit this information on a single line, we'll just add `//` right before our comment. Here's an example:
+```Java
+// This is a class
+public class HelloWorld {
+    // This is the main method.
+    public static void main(String[] args) {
+        // This is a print statement. Make sure to allign your comments so that they are indented with the rest of the code.
+        System.out.println("Hello, World!"); // We can also put comments right after a line of code, like this.
+    }
+}
+```
+#### Multi-line comments:
+Maybe single-line comments aren't cutting it for you. Let's say you'd like to write a comment that won't fit on a single line. For this, you need to encapsulate your multi-line comment like this:
+```Java
+public class HelloWorld {
+    /*
+    This is how multi-line comments work.
+    Don't forget to indent the comment at the same level.
+    It's also bad programming practice to have comments that exceed the 100'th column on a single line.
+    For example, the previous line had exceeded to the 103rd column.
+    */
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+```
+
