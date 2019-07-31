@@ -32,3 +32,6 @@ The **terminal** should pop up with the following output:
   * The **terminal** is software that allows us to input information into programs and also outputs the information produced by programs.
   * Now you’ll notice, this code looks a bit odd. It doesn’t look like a sentence you would read out of a book. This is because programming languages have something called syntax. Syntax means to write code in such a way that our computer will understand what we’re doing.
   * While you may not know what that odd mess of code above exactly does or means, we will understand more next lesson.
+
+## Homework:
+Throughout this course, you may come across inconveniences when installing programs or you may get errors when coding. Thankfully, there are millions of other programmers like you who have all become stuck at some point. There are so many resources for resolving problems online. The most thorough forum is [Stack Overflow](https://stackoverflow.com/tour). If you have any issues, your homework is to resolve it through Stack Overflow and YouTube tutorials. Best of luck to you!
