@@ -2,7 +2,7 @@
 ## Understanding Java Syntax:
 We'll be starting from the most general concepts to the most specific concepts. 
 ### Java Files:
-Java source code files end with the `.java` extension. When the code is _compiled_, it produces a program with the same name but `.class` extension. This is called a **bytecode** file. A bytecode file is binary (1's and 0's) code executable by a **Java Virtual Machine (JVM)**. The JVM enables computers to run Java programs that are compiled as bytecode.
+Java source code files end with the `.java` extension. When the code is _compiled_, it produces a program with the same name but `.class` extension. This is called a **bytecode** file. A bytecode file is binary (1's and 0's) code executable by a **Java Virtual Machine (JVM)**. The JVM enables computers to run Java programs that are compiled as bytecode. For a `.java` source code to be able to be compiled, there needs to be no _syntax errors_. Syntax errors are mistakes we make when we don't follow coding conventions for Java. These conventions are important for the _Compiler_ to be able to turn our source code into bytecode.
 * You can compile program through your IDE.
   * To compile and run in Eclipse, follow [this guide](http://pages.cs.wisc.edu/~cs302/labs/EclipseTutorial/Step_04.html).
   * To compile and run in NetBeans, follow [this guide](https://netbeans.org/kb/docs/java/quickstart.html#run).
@@ -67,4 +67,15 @@ public class HelloWorld {
     }
 }
 ```
+## Review:
+* Java source code is in `.java` files and is compiled into `.class` bytecode files.
+* A class represents a general concept that a program achieves.
+* The `main()` method acts as a checklist of things for a class to do.
+* We can print by using `System.out.println()`.
+* Curly braces encapsulate smaller chunks of code within a scope.
+* Semicolons are put at the end of statements.
+* Comments are useful for annotating code.
+* White spaces help us read code easily.
 
+## Homework:
+Compile and run a program that prints out: `I did my homework, Furkan!`.
