@@ -76,6 +76,7 @@ public class HelloWorld {
 * Semicolons are put at the end of statements.
 * Comments are useful for annotating code.
 * White spaces help us read code easily.
+* Syntax is the name given to the collection of rules followed for the compiler to be able to read code and convert it into bytecode. Good syntax is also really useful for humans to read code.
 
 ## Homework:
 Compile and run a program that prints out: `I did my homework, Furkan!`.
