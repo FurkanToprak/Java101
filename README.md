@@ -10,7 +10,7 @@ Each lesson has a homework task attached at the very end. Please complete this m
 ## Available lessons:
 * [Lesson 1](lesson1.md): An Introduction to Programming
 * [Lesson 2](lesson2.md): Syntax
-* [Lesson 3](lesson3.md): Variables, Data Types
+* [Lesson 3](lesson3.md): Variables and Data Types
 
 ## Coming soon:
 * [Lesson 4](lesson4.md): Classes, Objects, and Scope
