@@ -18,6 +18,8 @@ If we wanted to read this out, we would say _integer a is assigned 5_. Here's ho
 Earlier, we mentioned that `a` had a _predetermined_ size. This means that the program knows how much memory to allocate to variable `a` before trying to store a value. How did the program know how much memory to allocate?
 We specified `a`'s data type as an `int`. `int` is one of the many data types. Let's review some data types:
 * Data types can be separated as **primitive** or **non-primitive**. Primitive data types are data types that are built into Java. Non-primitive data types are not built into Java. For now, all you need to know that primitive data types are all lowercase whereas non-primitive data types are capitalized.
+
+**Note:** We'll be taking a look at about 9 different data types. At first, their names and their characteristics will blend into each other. We'll also be taking a look at some numbers. Don't let this overwhelm you. I've been studying Computer Science for 4 years and still don't know a lot of these numbers. This information dump is just for future reference. For now, focus on the functions and limitations of the data types.
 ### Primitive Data Types:
 
 * `int`: The **integer** data type can store whole numbers that do not contain decimal points. 
@@ -110,3 +112,4 @@ Here's how to declare and instantiate all in the same line:
 ```Java
 String i = "I know what I want this string to be.";
 ```
+## Homework:
