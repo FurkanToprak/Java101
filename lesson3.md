@@ -21,17 +21,18 @@ The program knew the necessary memory because we specified `a`'s data type as an
 
 **Note:** We'll be taking a look at 9 different data types. At first, their names and their characteristics will blend into each other. We'll also be taking a look at some numbers. Don't let this overwhelm you. I've been studying Computer Science for 4 years and still don't know a lot of these numbers. This information dump is just for future reference. For now, remember to focus on the functions and limitations of the data types.
 ### Primitive Data Types:
-
-* `int`: The **integer** data type can store whole numbers that do not contain decimal points. 
-  * `int` can be negative, zero, or positive. `int` allows values between -2,147,483,648 and 2,147,483,647, inclusive.
+* `byte`: The **byte** data type is a number container that only stores whole numbers from -128 to 127, inclusive.
+  * As byte is the smallest primitive data with a set size, it's also used as a measurement for memory. The sizes of the rest of the data types will be measured in bytes.
+* `short`: The **short** data type also stores whole numbers. 
+  * The range of `short` is from	-32,768 to 32,767, inclusive.
+  * The size of `short` is 2 bytes.
+* `int`: The **integer** data type also stores whole numbers. This is the most popular data type for storing whole numbers.
+  * The range of `int` is from -2,147,483,648 and 2,147,483,647, inclusive.
   * Let's say you wanted to make an app that stored a user's grades. If you wanted to store the number of courses the user is taking, you would store it within an `int` object because courses are counted with whole numbers (you can't take 0.23 of a class!).
   * The size of `int` is 4 bytes. (See `byte` for more.)
 ```Java
 int courseNumber = 7;
 ```
-* `byte`: The **byte** data type is similar to `int` as it only stores numbers from -128 to 127, inclusive.
-  * As byte is the smallest primitive data with a set size, it's also used as a measurement for memory. The sizes of the rest of the data types will be measured in bytes.
-* `short`: The **short** data type also stores whole numbers. The range of `short` is from	-32,768 to 32,767, inclusive.
   * The size of `short` is 2 bytes.
 * `long`: The **long** data type also stores whole numbers. The range of `long` is from	-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807, inclusive.
   * The size of `long` is 8 bytes.
