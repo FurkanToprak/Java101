@@ -2,6 +2,9 @@
 
 This is the syllabus for Furkan Toprak's Java 101 class. This class is built by an Undergraduate Computer Science Student, for students. I built the material and subjects for the course in the order that I saw fit based on what had confused me when I was first learning Computer Science.
 
+## Homework: 
+Each lesson has a homework task attached at the very end. Please complete this material before proceeding to the next lesson.
+
 ## Available lessons:
 * [Lesson 1](lesson1.md): An Introduction to Programming
 * [Lesson 2](lesson2.md): Syntax
