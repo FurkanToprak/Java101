@@ -14,7 +14,9 @@ Each lesson has a homework task attached at the very end. Please complete this m
 
 ## Coming soon:
 * [Lesson 4](lesson4.md): Classes, Objects, and Scope
-* [Lesson 5](lesson5.md): Libraries, User Input, and Printf
+* [Lesson 5](lesson5.md): Math in Java
+* [Lesson 6](lesson6.md): Conditions and Loops
+* [Lesson 7](lesson7.md): Libraries, User Input, and Printf
 
 ## Contact Me:
 Don't hesitate to contact me if any of this material confuses you or you have any questions.
