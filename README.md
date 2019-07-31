@@ -11,6 +11,8 @@ Each lesson has a homework task attached at the very end. Please complete this m
 * [Lesson 1](lesson1.md): An Introduction to Programming
 * [Lesson 2](lesson2.md): Syntax
 * [Lesson 3](lesson3.md): Variables, Data Types
+
+## Coming soon:
 * [Lesson 4](lesson4.md): Classes, Objects, and Scope
 * [Lesson 5](lesson5.md): Libraries, User Input, and Printf
 
