@@ -113,3 +113,19 @@ Here's how to declare and instantiate all in the same line:
 String i = "I know what I want this string to be.";
 ```
 ## Homework:
+Tell me about yourself using code! Here's an example:
+```Java
+/*
+This program will tell you the following:
+Name
+Age
+If I love coding
+The money I have in my wallet (Please don't mug me)
+My middle initial
+*/
+String myName = "Furkan Toprak";
+int myAge = 19; // It's my birthday the day I'm writing this! Don't forget to add comments like this one.
+boolean lovesCoding = true;
+float myWallet = 34.12;
+char middleInitial = 'C';
+```
