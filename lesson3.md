@@ -69,6 +69,8 @@ All you need to know for non-primitive data types for now is the `String`.
 ```Java
 String userName = "John Doe";
 ```
+Keep in mind that quotations are not part of the string itself- only what is between the quotation marks.
+If we were to display `userName`, we'd get `John Doe`.
 ## Putting it together:
 ### Declaration:
 Sometimes, you may not know the value of a variable instantly but will later compute it. If this is the case, you must declare a variable. **Declaration** is telling the program to reserve memory under a variable name with a specific data type.
