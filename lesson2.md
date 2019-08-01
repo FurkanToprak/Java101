@@ -71,7 +71,7 @@ public class HelloWorld {
 * Classes always start with a capital letter. Every word within the class has a capital first letter. For example, `HelloWorld` is capitalized at the beginning of every new word. This is called **CamelCase**.
 * Classes, methods, and variables (we'll learn about them later- let this just be for future reference) should not start with an underscore, dollar sign, capital letter, or number.
 * **Important:** In Java, names for methods, classes, and variables *cannot* contain spaces or punctuation marks (`-`, `,`, `+`, etc) in them. See the first bullet point for multi-worded class names. For variables names with multiple words, words should either be separated with underscores or the words after the first word should start with a capital letter.
-* Constants (we'll learn about them later) should be in all capital letters, and multiple words should be separated by underscores. 
+* Constants (we'll learn about them later) should be in all capital letters, and multiple words should be separated by underscores. Constants should start with the keyword `final`.
 Here are some examples of good and bad naming convention:
 ```Java
 // Classes should be CamelCased.
@@ -80,11 +80,13 @@ public class GoodConvention {
     // Good variable name
     int someNumber;
     int some_number;
+    final int SOME_NUMBER;
     // Bad variable name
     // These are just bad naming convention: it will still run but is bad naming convention.
     int SomeNumber;
     int somenumber;
     int SOMENUMBER;
+    final int some_number;
     // These bad names are so bad that Java doesn't know what this means! The program will not compile.
     int 1number;
     int some number;
@@ -92,6 +94,7 @@ public class GoodConvention {
     int $someNumber;
 }
 ```
+Don't worry about memorizing these rules too much for now. Because you still don't know a lot of these concepts, it won't be too meaningful to you. It *is* important to know these going forwards though, so are actually able to run programs. I'll be linking these rules in the future, so you don't have to worry about memorizing them just yet.
 
 ## Review:
 * Java source code is in `.java` files and is compiled into `.class` bytecode files.
