@@ -116,7 +116,7 @@ Here's how to declare and instantiate all in the same line:
 String i = "I know what I want this string to be.";
 ```
 ### Using Variables:
-After you assign a value to a variable, you can use that variable as a placeholder for the value you assigned to it. Here's an example.
+After you assign a value to a variable, you can use that variable as a placeholder for the value you assigned to it. Here's an example. As we use variables, please recall the [naming conventions](https://github.com/FurkanToprak/Java101/blob/master/lesson2.md#naming-conventions) from earlier courses.
 ```Java
 String greeting = "Hello, World!";
 System.out.println(greeting);
