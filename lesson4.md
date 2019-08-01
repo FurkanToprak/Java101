@@ -28,6 +28,6 @@ ClassName objectVariable = new ClassName();
 Now, `objectVariable` is an instance of `ClassName`. Any property that `ClassName` has, `objectVariable` will as well.
 ## Combining the Concepts:
 Let's make this concrete with an example:
-![Alt text](car_blueprint)
+![Alt text](car_blueprint.jpg)
 * If classes are the Java equivalent of blueprints, let's make a class called `CarModel` that represents a car.
-  * When designing a class, we 
+  * When designing a class, we need to give the class attributes. Let's 
