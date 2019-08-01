@@ -35,9 +35,9 @@ public class HelloWorld {
 }
 ```
 This line of code prints out `Hello, World!` to the terminal. You may be wondering about the odd-looking statement needed to print something (`System.out.println`), but all you need to do for now is know that any `argument` we put within the parenthesis and surround with quotations will be printed out to the terminal.
-**Notes**:
+<br><br>**Notes**:
 * If you'll notice, this looks different than the previous code. This line of code does not have any curly braces and ends with a semicolon. Every line of code in Java (other than methods, classes, and a couple other exceptions) ends with `;`. This syntax tells our interpreter that a line of code or specific instruction has ended.
-* By now, you might have noticed that we indent code after every curly brace. This is to organize our code. Please keep in mind that each indentation is four spaces or one tab. Please pick one of the two and consistently use it. It doesn't matter which one you pick as long as you're consistent.
+* By now, you might have noticed that we indent code after every curly brace. This is to organize our code and is called **indentation**. Please keep in mind that each indentation is four spaces or one tab in Java. Please pick one of the two and consistently use it. It doesn't matter which one you pick as long as you're consistent.
 ### Comments
 Often times, it's useful to annotate your code. In order to be able to make comments about your code, without affecting the rest of the code, we put either use single- or multi- line comments.
 #### Single-line comments:
@@ -67,6 +67,32 @@ public class HelloWorld {
     }
 }
 ```
+## Naming conventions:
+* Classes always start with a capital letter. Every word within the class has a capital first letter. For example, `HelloWorld` is capitalized at the beginning of every new word. This is called **CamelCase**.
+* Classes, methods, and variables (we'll learn about them later- let this just be for future reference) should not start with an underscore, dollar sign, capital letter, or number.
+* **Important:** In Java, names for methods, classes, and variables *cannot* contain spaces or punctuation marks (`-`, `,`, `+`, etc) in them. See the first bullet point for multi-worded class names. For variables names with multiple words, words should either be separated with underscores or the words after the first word should start with a capital letter.
+* Constants (we'll learn about them later) should be in all capital letters, and multiple words should be separated by underscores. 
+Here are some examples of good and bad naming convention:
+```Java
+// Classes should be CamelCased.
+public class GoodConvention {
+    // Remember to indent! 4 spaces or a tab!
+    // Good variable name
+    int someNumber;
+    int some_number;
+    // Bad variable name
+    // These are just bad naming convention: it will still run but is bad naming convention.
+    int SomeNumber;
+    int somenumber;
+    int SOMENUMBER;
+    // These bad names are so bad that Java doesn't know what this means! The program will not compile.
+    int 1number;
+    int some number;
+    int _someNumber;
+    int $someNumber;
+}
+```
+
 ## Review:
 * Java source code is in `.java` files and is compiled into `.class` bytecode files.
 * A class represents a general concept that a program achieves.
@@ -77,6 +103,7 @@ public class HelloWorld {
 * Comments are useful for annotating code.
 * White spaces help us read code easily.
 * Syntax is the name given to the collection of rules followed for the compiler to be able to read code and convert it into bytecode. Good syntax is also really useful for humans to read code.
+* There are naming conventions of classes, methods, variables, and constants. These should be followed, or the program may not compile, do something we didn't intend, or 
 
 ## Homework:
 Compile and run a program that prints out: `I did my homework, Furkan!`.
