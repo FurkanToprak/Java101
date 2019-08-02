@@ -7,10 +7,20 @@ Libraries allow for **reusability** of code. Libraries are collections of code t
 // The format is import <package>.<class>
 import useful_package.Car;
 ```
-Now, once we've imported the library, we can now use it. We'll use a real-world example next section.
-
 ## Math in Java:
 Before we proceed with this course, let us think about why we _need_ computers. Computers are very good at _computing_. This is why the first applications for computers were used for mathematics. Similarly, to be able to use computers to their fullest capabilities, we must learn how math works in programming and in Java specifically. Let's get started.
+### Important Details:
+### Addition:
 
-### Using the 
-### Integer Math
+### Using Java's Math Library:
+```Java
+import Java.lang.Math;
+```
+### Scientific Numbers:
+Java allows scientific notation to be stored within `float` and `double`.
+Here's an example:
+```Java
+float scientific_one = 35e3f;
+double scientific_two = 12E4d;
+```
+We use `f` and `d` at the end of scientific notation to let Java distinguish decimals between `float` and `double`s.
