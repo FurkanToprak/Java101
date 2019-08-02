@@ -27,6 +27,7 @@ ClassName objectVariable = new ClassName();
 ```
 Now, `objectVariable` is an instance of `ClassName`. Any property that `ClassName` has, `objectVariable` will as well.
 ## Combining the Concepts:
+### Creating a Class and Class Variables:
 Let's make this concrete with an example:
 ![Alt text](car_blueprint.jpg)
 * If classes are the Java equivalent of blueprints, let's make a class called `CarModel` that represents a car.
@@ -41,17 +42,13 @@ public class CarModel {
     double carPrice;
 }
 ```
-Now, in order to really turn this class into  blueprint, we'll need to make a constructor. Constructors are guidelines on how to turn a generic class into an object. The syntax for creating an object using a constructor is the following:
-`ClassName objName = new ClassName();`. 
-* The `ClassName` before `objName` tells Java that the variable `objName` will be an instance of the class `ClassName`.
-* The `new` keyword tells Java that a brand new place in memory must be reserved for a `new` object that will be a `ClassName` object.
-* `ClassName()` is a call to a **Constructor**. A constructor is a block of code that creates an instance of a class. Typically, class attributes are assigned within the constructor.
-  * If a constructor does not accept any arguments, this is called a **default constructor**. This creates a generic form of your object.
-  * If a constructor accept arguments, then the attributes of the object will change based on the arguments passed into the constructor.
+### Creating a constructor:
+Now, in order to really turn this class into  blueprint, we'll need to make a constructor. Constructors are guidelines on how to turn a generic class into an object. Below is the syntax for two constructors:
 
 To make this a more concrete example:
 ```Java
 public class CarModel {
+    // These are variables that are attributes of the CarModel class.
     String driverName;
     int carYear;
     double carPrice;
@@ -59,12 +56,25 @@ public class CarModel {
     public CarModel() {
         // Nothing is assigned here. driverName, carYear, and carPrice will be null, 0, and 0.0 by default.
     }
-    // This is not a default constructor.
+    
+    // This is not a default constructor. This will modify the attributes of this class when creating an object.
     public CarModel(String driverNameArgument, int carYearArgument, double carPriceArgument) {
         driverName = driverNameArgument;
         carYear = carYearArgument;
         carPrice = carPriceArgument;
     }
+}
+```
+### Using a constructor:
+Now that we've made the constructors- the blueprint- we need to make an actual instance of a class- an object. The syntax for creating an object using a constructor is the following:
+`ClassName objName = new ClassName();`. 
+* The `ClassName` before `objName` tells Java that the variable `objName` will be an instance of the class `ClassName`.
+* The `new` keyword tells Java that a brand new place in memory must be reserved for a `new` object that will be a `ClassName` object.
+* `ClassName()` is a call to a **Constructor**. A constructor is a block of code that creates an instance of a class. Typically, class attributes are assigned within the constructor.
+  * If a constructor does not accept any arguments, this is called a **default constructor**. This creates a generic form of your object.
+  * If a constructor accept arguments, then the attributes of the object will change based on the arguments passed into the constructor.
+
+```Java
     // If the main method is a to-do list, let's make put making a CarModel object on our "list".
     public static void main(String[] args) {
         // Let's start with a default constructor.
@@ -91,5 +101,4 @@ public class CarModel {
         System.out.println(myCar.carYear);
         System.out.println(myCar.carPrice);
     }
-}
 ```
