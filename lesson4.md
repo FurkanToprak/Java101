@@ -73,8 +73,23 @@ Now that we've made the constructors- the blueprint- we need to make an actual i
 * `ClassName()` is a call to a **Constructor**. A constructor is a block of code that creates an instance of a class. Typically, class attributes are assigned within the constructor.
   * If a constructor does not accept any arguments, this is called a **default constructor**. This creates a generic form of your object.
   * If a constructor accept arguments, then the attributes of the object will change based on the arguments passed into the constructor.
-
 ```Java
+public class CarModel {
+    // These are variables that are attributes of the CarModel class.
+    String driverName;
+    int carYear;
+    double carPrice;
+    // This is a default constructor.
+    public CarModel() {
+        // Nothing is assigned here. driverName, carYear, and carPrice will be null, 0, and 0.0 by default.
+    }
+    
+    // This is not a default constructor. This will modify the attributes of this class when creating an object.
+    public CarModel(String driverNameArgument, int carYearArgument, double carPriceArgument) {
+        driverName = driverNameArgument;
+        carYear = carYearArgument;
+        carPrice = carPriceArgument;
+    }
     // If the main method is a to-do list, let's make put making a CarModel object on our "list".
     public static void main(String[] args) {
         // Let's start with a default constructor.
@@ -83,7 +98,7 @@ Now that we've made the constructors- the blueprint- we need to make an actual i
             To retrieve an attribute of an object, we use objectName.attributeName.
             We'll be printing the attributes of the genericCar object using System.out.println().
             Let's test out the attributes of this car:
-        /*
+        */
         System.out.println(genericCar.driverName);
         System.out.println(genericCar.carYear);
         System.out.println(genericCar.carPrice);
@@ -101,4 +116,5 @@ Now that we've made the constructors- the blueprint- we need to make an actual i
         System.out.println(myCar.carYear);
         System.out.println(myCar.carPrice);
     }
+}
 ```
