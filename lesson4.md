@@ -30,4 +30,66 @@ Now, `objectVariable` is an instance of `ClassName`. Any property that `ClassNam
 Let's make this concrete with an example:
 ![Alt text](car_blueprint.jpg)
 * If classes are the Java equivalent of blueprints, let's make a class called `CarModel` that represents a car.
-  * When designing a class, we need to give the class attributes. Let's 
+  * When designing a class, we need to give the class attributes. We'll give the car the following attributes:
+    * The name of the driver.
+    * The year the car was built.
+    * The price of the car
+```Java
+public class CarModel {
+    String driverName;
+    int carYear;
+    double carPrice;
+}
+```
+Now, in order to really turn this class into  blueprint, we'll need to make a constructor. Constructors are guidelines on how to turn a generic class into an object. The syntax for creating an object using a constructor is the following:
+`ClassName objName = new ClassName();`. 
+* The `ClassName` before `objName` tells Java that the variable `objName` will be an instance of the class `ClassName`.
+* The `new` keyword tells Java that a brand new place in memory must be reserved for a `new` object that will be a `ClassName` object.
+* `ClassName()` is a call to a **Constructor**. A constructor is a block of code that creates an instance of a class. Typically, class attributes are assigned within the constructor.
+  * If a constructor does not accept any arguments, this is called a **default constructor**. This creates a generic form of your object.
+  * If a constructor accept arguments, then the attributes of the object will change based on the arguments passed into the constructor.
+
+To make this a more concrete example:
+```Java
+public class CarModel {
+    String driverName;
+    int carYear;
+    double carPrice;
+    // This is a default constructor.
+    public CarModel() {
+        // Nothing is assigned here. driverName, carYear, and carPrice will be null, 0, and 0.0 by default.
+    }
+    // This is not a default constructor.
+    public CarModel(String driverNameArgument, int carYearArgument, double carPriceArgument) {
+        driverName = driverNameArgument;
+        carYear = carYearArgument;
+        carPrice = carPriceArgument;
+    }
+    // If the main method is a to-do list, let's make put making a CarModel object on our "list".
+    public static void main(String[] args) {
+        // Let's start with a default constructor.
+        CarModel genericCar = new CarModel();
+        /*  
+            To retrieve an attribute of an object, we use objectName.attributeName.
+            We'll be printing the attributes of the genericCar object using System.out.println().
+            Let's test out the attributes of this car:
+        /*
+        System.out.println(genericCar.driverName);
+        System.out.println(genericCar.carYear);
+        System.out.println(genericCar.carPrice);
+        // Let's use the other constructor. First, we'll declare variables to use later.
+        String myName = "Furkan";
+        int myCarYear = 2014;
+        double myCarWorth = 10000;
+        /* Now let's input these variables as the arguments into the constructor.
+           It's important to input the arguments in the order stated in the constructor.
+           If there is a mismatch between the order of data types, there will be an error.
+           For example, this constructor expects a String, an int, and a double.
+        */
+        CarModel myCar = new CarModel(myName, myCarYear, myCarWorth); 
+        System.out.println(myCar.driverName);
+        System.out.println(myCar.carYear);
+        System.out.println(myCar.carPrice);
+    }
+}
+```
