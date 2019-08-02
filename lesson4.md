@@ -118,3 +118,11 @@ public class CarModel {
     }
 }
 ```
+# Review:
+* Java is an object orientated programming language.
+* Classes represent concepts.
+* Objects are instances of classes.
+* You need a constructor to create an object from a class.
+* You can access attributes using the following syntax: `objName.attributeName`
+# Homework
+Create a `Student` class. Make it a default constructor and a second constructor. Make sure it has at least 3 class variables. Display the object's attributes once you're done using `System.out.println()`.
