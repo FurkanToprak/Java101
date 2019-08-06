@@ -11,7 +11,7 @@ We'll be constructing a file called `HelloWorld.java`. This will produce a file 
 ### Classes:
 Let's build a Java file from scratch.
 ```Java
-public class HelloWorld {
+class HelloWorld {
 
 }
 ```
@@ -19,7 +19,7 @@ Classes are one of the broadest concepts in Java, but think of them as a single 
 ### The `main()` method:
 Let's add a _method_ in the class. A method is a single block of code that achieves the same purpose. This method will be called `main()`. The `main()` method lists the things the program achieves. We'll be adding things for the program to achieve in a bit.
 ```Java
-public class HelloWorld {
+class HelloWorld {
     public static void main(String[] args) {
     }
 }
@@ -28,7 +28,7 @@ We'll learn what `public`, `static`, and `void` mean later. Also ignore the stuf
 ### Printing:
 If we want to display a message, we have to use _print_ statements. Print statements tell the program to _output_ certain information. Let's add a print statement.
 ```Java
-public class HelloWorld {
+class HelloWorld {
     public static void main(String[] args) {
         System.out.println("Hello, World!");
     }
@@ -44,7 +44,7 @@ Often times, it's useful to annotate your code. In order to be able to make comm
 Let's say we wanted to add a comment to the previous code- maybe information about what the code does. If we can fit this information on a single line, we'll just add `//` right before our comment. Here's an example:
 ```Java
 // This is a class
-public class HelloWorld {
+class HelloWorld {
     // This is the main method.
     public static void main(String[] args) {
         // This is a print statement. Make sure to allign your comments so that they are indented with the rest of the code.
@@ -55,7 +55,7 @@ public class HelloWorld {
 #### Multi-line comments:
 Maybe single-line comments aren't cutting it for you. Let's say you'd like to write a comment that won't fit on a single line. For this, you need to encapsulate your multi-line comment like this:
 ```Java
-public class HelloWorld {
+class HelloWorld {
     /*
     This is how multi-line comments work.
     Don't forget to indent the comment at the same level.
@@ -75,7 +75,7 @@ public class HelloWorld {
 Here are some examples of good and bad naming convention:
 ```Java
 // Classes should be CamelCased.
-public class GoodConvention {
+class GoodConvention {
     // Remember to indent! 4 spaces or a tab!
     // Good variable name
     int someNumber;
