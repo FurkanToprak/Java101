@@ -2,7 +2,7 @@
 tags: [Java101]
 title: lesson3
 created: '2019-08-07T13:23:06.953Z'
-modified: '2019-08-07T13:54:51.046Z'
+modified: '2019-08-07T18:40:38.981Z'
 ---
 
 # Java 101 | Lesson 3:
@@ -21,6 +21,8 @@ If we wanted to read this out, we would say _integer a is assigned 5_. Here's ho
 * `a` is the **variable name**. All this does is **allocate** a portion of memory and name it `a`.
 * `=` is the **assignment operator**. The assignment operator assigns the _value_ on the right side of the operator to the variable on the left side of the operator.
 
+## Memory, Bits and Bytes:
+This section will solely function as a necessary bit (no pun intended) of background knowledge. Memory in computers is measured with terms like "bits", "bytes", "kilobytes", "gigabytes", etc. A **bit** is the memory required to store a 1 or a 0 in binary code. This is the smallest unit of memory possible. **Bytes** are the next step up in the memory unit hierarchy and are _equal to 8 bits_. There are larger units of memory, but we'll review them later.
 ## Data Types:
 Earlier, we mentioned that `a` had a _predetermined_ size. This means that the program knows how much memory to allocate to variable `a` before trying to store a value. How did the program know how much memory to allocate?
 The program knew the necessary memory because we specified `a`'s data type as an `int`. `int` is one of the many data types in Java. Let's learn some data types:

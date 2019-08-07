@@ -2,7 +2,7 @@
 tags: [Java101]
 title: lesson5
 created: '2019-08-07T13:23:06.953Z'
-modified: '2019-08-07T14:45:33.955Z'
+modified: '2019-08-07T19:32:25.065Z'
 ---
 
 # Lesson 5 | Libraries and Math in Java:
@@ -116,19 +116,114 @@ double i = 0.1d;
 double j = h * i; // Double, not int- even if the answer is 1 in "normal" mathematics!
 ```
 ### Division and Integer Division:
+Division is not so straightforward in Java. How division is played out depends entirely on the data types of the variables you are dividing. We'll start with division in integers first.
 
-### Modulo:
-
-### Rounding Errors in Java:
-### Order of Operations in Java:
-## Combining Libraries and Math | Using Java's Math Library:
+* **Integer Division** occurs when dividing a `byte`, `short`, `int`, or `long` with a `byte`, `short`, `int`, or `long`. For now, we'll just use `int`s for our examples. Integer division is unlike normal division in that we're only keeping the _quotient_ and discarding the _remainder_. 
+* **Float Division** occurs when either the divident, or divisor, or both divident and divisor is a float.
+Here's an example that shows the difference between integer division and float division in Java:
 ```Java
-import Java.lang.Math;
+/* 
+   Integer Division
+   In normal math, 9/2 = 4 + 1/2. We get rid of the remainder, 1/2, for integer division.
+*/
+System.out.println(9 / 2); // 4
+// Float Division
+System.out.println(9.0 / 2.0); // 4.5
+System.out.println(9.0 / 2); // 4.5
+System.out.println(9 / 2.0); // 4.5
 ```
-### Scientific Numbers:
+### Modulo:
+Module is sort of like the opposite of integer division. Instead, we keep the _remainder_ and discard the _quotient_ for modulo. Modulo between two numbers is expressed like: `A % B`. This expression should return the remainder (in normal mathematics) for `A / B`.
+```Java
+/* 
+   Modulo
+   In normal math, 9/2 = 4 + 1/2. We get rid of the quotient, 4, for modulo.
+*/
+System.out.println(9 % 2); // 1.
+```
+### Scientific Notation in Java (Not So Important to Know):
+**Reminder:** 
+* Scientific notation allows us to multiple a number with a power of 10. It is a tool of convenience when writing large or small numbers.
+ * For instance, it would be quite annoying to have to write `62700000000000` if we wanted. Instead, we can express this as 627 x 10<sup>11</sup>. (In true scientific notation, this would be 6.27 x 10<sup>13</sup>, but _who cares_?)
+* Another way to write 627 x 10<sup>11</sup> is 627e11. This is how Java writes scientific notation as well.
 Java allows scientific notation to be stored within `float` and `double`. Don't forget to add `f` and `d` at the end of variables!
 Here's an example:
 ```Java
 float scientific_one = 35e3f;
-double scientific_two = 12E4d;
+double scientific_two = 12e4d;
 ```
+### Rounding Errors in Java:
+While we humans easily can think of fractions and can think of numbers like 1/3 as 0.33333... with infinitely repeating 3's, that is not what Java (or other programming languages) do. Instead, Java uses 32-bit (4 bytes) or 64-bit (8 bytes) chunks of memory to store numbers. Therefore, Java has a limited number of spaces for decimals and often makes **rounding errors** by rounding numbers. `float` is especially bad with rounding errors because it is a 32-bit chunk of memory. While we will learn ways to combat rounding errors, we'll just use the `double` data type for now when we want to be more precise. `double` is more precise because it is a 64-bit chunk of memory.
+
+## Combining Libraries and Math | Using Java's Math Library:
+If you've noticed, we have thus far excluded some of the essential operations that we use often in normal mathematics. Some of these include exponents (x to the power of y), special numbers like π, trigonometric functions like sin and cos, and the practice of rounding numbers. This is because there is no special operator like `+ - / * %` to do these. Instead, we use methods provided to us from Java's native `Math` library. (Native just means that it's built into Java).
+### How to use the `Math` library:
+* In order to use any of the methods from `Math`, import the math library by typing `import java.lang.Math;` before any class declarations.
+### List of Commonly Used Math Methods and Variables:
+**Assumption:** In the following methods, only numerical values are inputted.
+* `Math.sqrt(x)`: Returns the square root of x as a `double`.
+* `Math.pow(x, y)`: Returns x<sup>y</sup> as a `double`.
+* `Math.sin(x)`: Returns sin x as a `double`.
+* `Math.cos(x)`: Returns cos x as a `double`.
+* `Math.tan(x)`: Returns tan x as a `double`.
+* `Math.asin(x)`: Returns sin<sup>-1</sup> x as a `double`.
+* `Math.acos(x)`: Returns cos<sup>-1</sup> x as a `double`.
+* `Math.atan(x)`: Returns tan<sup>-1</sup> x as a `double`.
+* `Math.exp(x)`: Returns e<sup>x</sup> as a `double`.
+* `Math.log(x)`: Returns ln x as a `double`.
+* `Math.log10(x)`: Returns log<sub>10</sub> x as a `double`.
+* `Math.round(x)`: Rounds to nearest number. The result is an integer or a long, depending on the size of x.
+* `Math.ceil(x)`: Rounds  up to nearest number. The result is a double.
+* `Math.floor(x)`: Rounds down to nearest number. The result is a double.
+* `Math.abs(x)`: Returns |x|. Returns number of the same data type as x.
+* `Math.max(x, y)`: Returns y if x < y. Returns x if y < x.
+* `Math.min(x, y)`: Returns x if x < y. Returns y if y < x.
+Here's an example of some methods being used:
+```Java
+import java.lang.Math;
+class MathTester {
+  public static void main(String[] args) {
+    System.out.println(Math.sqrt(9));
+    System.out.println(Math.pow(2, 5));
+    System.out.println(Math.round(3.5));
+    System.out.println(Math.ceil(3.5));
+    System.out.println(Math.floor(3.5));
+    System.out.println(Math.min(3, 5.5));
+  }
+}
+```
+The output is:
+```
+3.0
+32.0
+4
+4.0
+3.0
+3.0
+```
+### Order of Operations in Java:
+**P**arentheses: They'll be our best friend in Java. We can't exactly write fractions, so we'll be using a lot of parentheses.
+**F**unctions: Functions are executed next.
+**M**ultiplication
+**D**ivision
+**A**ddition
+**S**ubtraction
+# Review
+* Libraries allow for **reusability** of code.
+* Integer division and modulo are complements to each other. While integer division finds quotients, modulo finds remainders.
+* Math libraries help us perform more complicated mathematical operations.
+* Storing numbers in the correcct data type is _essential_.
+# Homework:
+* Import the Math library in a Java class called `MathHomework.java`
+* Is the square root of your age or half of your age smaller? Prove this using code.
+  * Make sure to store the square root of your age in a variable.
+  * Make sure to store half of your age in a variable. 
+  * You'll need a function from the Math library that can return the smaller of two numbers. Store the result of this function.
+  * Print out your answer.
+* What will the _absolute_(no negative sign) age difference be between you and your mother when you're twice as old as you are now?
+ * Hint: If you are _n_ years old today, you will be 2_n_ years old in _n_ more years. If she is _m_ years old today, your mother will be _m + n_ years old when you are _2n_ years old.
+   * Store your age in _n_ years in a variable.
+   * Store your mothers age in _n_ years in a variable.
+   * Take the difference of these ages and store them in a variable.
+   * Take the absolute value of this difference using a function and store it in a variable.
+   * Print out your answer.
