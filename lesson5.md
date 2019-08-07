@@ -2,7 +2,7 @@
 tags: [Java101]
 title: lesson5
 created: '2019-08-07T13:23:06.953Z'
-modified: '2019-08-07T19:32:25.065Z'
+modified: '2019-08-07T19:58:19.514Z'
 ---
 
 # Lesson 5 | Libraries and Math in Java:
@@ -227,3 +227,54 @@ The output is:
    * Take the difference of these ages and store them in a variable.
    * Take the absolute value of this difference using a function and store it in a variable.
    * Print out your answer.
+Here's an example for you to follow:
+```Java
+/*
+Here's a Java program that will find the ages of my father and I when my father is twice as old as he is today.
+*/
+// Import Math
+import java.lang.Math;
+class MyDadIsOld {
+  public static void main(String[] args) {
+    System.out.println("Oh boy I have an old dad. Here goes nothing.");
+    int myDadsAge = 43; // The age of an old, withered man.
+    int myAge = 19; // The age of a fine specimen at the prime of his days and peak of his youth.
+    int evenOlderDad = myDadsAge * 2; // Infinity times two.
+    int aStillRelativelyYoungAge = myAge + myDadsAge; // I bet I still look great for my age.
+    // I don't need to take the absolute value, but I'm just showing how Math.abs() works.
+    int lookHowMuchYoungerIAm = Math.abs(evenOlderDad - aStillRelativelyYoungAge);
+    System.out.println("My dad is this many years older than me:");
+    System.out.println(lookHowMuchYoungerIAm);
+    // Here is my age and my dad's age.
+    System.out.println("My age today and in the future");
+    System.out.println(myAge);
+    System.out.println(aStillRelativelyYoungAge);
+    System.out.println("My dad's age today and in the future");
+    System.out.println(myDadsAge);
+    System.out.println(evenOlderDad);
+    // Just to confirm, let's see who will be younger both today and when my dad is ~even~ older.
+    int smallerAge = Math.min(myAge, myDadsAge);
+    System.out.println("I'm younger today:");
+    System.out.println(smallerAge);
+    int futureSmallerAge = Math.min(aStillRelativelyYoungAge, evenOlderDad);
+    System.out.println("I'm younger in the future:");
+    System.out.println(futureSmallerAge);
+  }
+}
+```
+Output:
+```
+Oh boy I have an old dad. Here goes nothing.
+My dad is this many years older than me:
+24
+My age today and in the future
+19
+62
+My dad's age today and in the future
+43
+86
+I'm younger today:
+19
+I'm younger in the future:
+62
+```
