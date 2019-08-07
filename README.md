@@ -1,3 +1,10 @@
+---
+tags: [Java101]
+title: README
+created: '2019-08-07T13:23:06.953Z'
+modified: '2019-08-07T13:54:16.379Z'
+---
+
 # Java 101
 
 This is the syllabus for Furkan Toprak's Java 101 class. This class is built by an Undergraduate Computer Science Student, for students. I built the material and subjects for the course in the order that I saw fit based on what had confused me when I was first learning Computer Science.

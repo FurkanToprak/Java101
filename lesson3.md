@@ -1,3 +1,10 @@
+---
+tags: [Java101]
+title: lesson3
+created: '2019-08-07T13:23:06.953Z'
+modified: '2019-08-07T13:54:51.046Z'
+---
+
 # Java 101 | Lesson 3:
 ## Variables:
 In computer science, **variable** is a name for a place in memory that can store values. Let's take a look at the diagram below.
@@ -145,7 +152,7 @@ class AboutMe {
         String myName = "Furkan Toprak";
         int myAge = 19; // It's my birthday the day I'm writing this! Don't forget to add comments like this one.
         boolean lovesCoding = true;
-        float myWallet = 34.12;
+        float myWallet = 34.12f;
         char middleInitial = 'C';
         // Now let's print them.
         System.out.println(myAge);

@@ -1,3 +1,10 @@
+---
+tags: [Java101]
+title: lesson4
+created: '2019-08-07T13:23:06.953Z'
+modified: '2019-08-07T13:53:55.355Z'
+---
+
 # Java 101 | Lesson 4
 ## Introduction:
 Java is an **object-orientated** language. This means that **everything in Java is either a class, an instance of a class (an object), or an attribute of a class or object.**

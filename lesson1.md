@@ -1,3 +1,10 @@
+---
+tags: [Java101]
+title: lesson1
+created: '2019-08-07T13:23:06.953Z'
+modified: '2019-08-07T13:53:41.660Z'
+---
+
 # Java 101 | Lesson 1:
 ## What is programming?
 * Programming is the act of telling a computer _exactly_ what to do- no more, no less. This is why I love computers. While humans are particularly bad at obeying commands and executing them flawlessly, computers are rather perfectionists.
