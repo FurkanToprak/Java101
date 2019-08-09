@@ -2,7 +2,7 @@
 tags: [Java101]
 title: README
 created: '2019-08-07T13:23:06.953Z'
-modified: '2019-08-07T13:54:16.379Z'
+modified: '2019-08-07T20:01:11.482Z'
 ---
 
 # Java 101
@@ -19,8 +19,8 @@ Each lesson has a homework task attached at the very end. Please complete this m
 * [Lesson 2](lesson2.md): Syntax
 * [Lesson 3](lesson3.md): Variables and Data Types
 * [Lesson 4](lesson4.md): Classes and Objects
-## Coming soon:
 * [Lesson 5](lesson5.md): Libraries and Math in Java
+## Coming soon:
 * [Lesson 6](lesson6.md): Conditions and Loops
 * [Lesson 7](lesson7.md): User Input and Printf
 
