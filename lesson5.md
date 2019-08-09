@@ -2,7 +2,7 @@
 tags: [Java101]
 title: lesson5
 created: '2019-08-07T13:23:06.953Z'
-modified: '2019-08-07T19:58:19.514Z'
+modified: '2019-08-09T17:44:22.957Z'
 ---
 
 # Lesson 5 | Libraries and Math in Java:
@@ -155,6 +155,22 @@ double scientific_two = 12e4d;
 ### Rounding Errors in Java:
 While we humans easily can think of fractions and can think of numbers like 1/3 as 0.33333... with infinitely repeating 3's, that is not what Java (or other programming languages) do. Instead, Java uses 32-bit (4 bytes) or 64-bit (8 bytes) chunks of memory to store numbers. Therefore, Java has a limited number of spaces for decimals and often makes **rounding errors** by rounding numbers. `float` is especially bad with rounding errors because it is a 32-bit chunk of memory. While we will learn ways to combat rounding errors, we'll just use the `double` data type for now when we want to be more precise. `double` is more precise because it is a 64-bit chunk of memory.
 
+## More Practice With Operations
+
+```Java
+// In the line below, declare two variables and multiply them together.
+
+// In the line below, see if 232 is perfectly divisible by 3. If not, what is the remainder?
+
+// In the line below, add a float to an integer and store that value.
+
+// Bonus: In the line below, assign Avogadro's Number to a variable.
+
+```
+**Bonus Questions:** 
+* Using modulo, how can you tell if an integer is even or odd?
+* Using division, how can you tell if an integer is even or odd? 
+  * (Hint: Think about integer division vs. float division.)
 ## Combining Libraries and Math | Using Java's Math Library:
 If you've noticed, we have thus far excluded some of the essential operations that we use often in normal mathematics. Some of these include exponents (x to the power of y), special numbers like π, trigonometric functions like sin and cos, and the practice of rounding numbers. This is because there is no special operator like `+ - / * %` to do these. Instead, we use methods provided to us from Java's native `Math` library. (Native just means that it's built into Java).
 ### How to use the `Math` library:
