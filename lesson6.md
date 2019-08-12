@@ -1,8 +1,8 @@
 ---
 tags: [Java101]
-title: 'lesson6'
+title: lesson6
 created: '2019-08-12T15:31:55.849Z'
-modified: '2019-08-12T18:26:53.747Z'
+modified: '2019-08-12T19:22:11.816Z'
 ---
 
 # Java 101 | Lesson 6:
@@ -137,7 +137,22 @@ else {
 * If someNumber is 309, the output is `This number is a very large positive number.`
 * If someNumber is 22, the output is `The number is positive.`
 ## Loops:
-
+Let's say I wanted to print something five times or until a certain condition is fulfilled. Instead of writing `System.out.println("Hello.");` five times or copying-and-pasting repeatedly, we could potentially just use a _loop_. A _loop_ repeats code until a condition is no longer fulfilled. Let's look at the types of loops.
+### For Loops:
+For loops are used when the number of times we want to repeat a code is known. There are four parts to a for loop:
+1) **Iterator Initialization:** To make a for loop, an **iterator** is initialized. This iterator will have its value changed for every cycle, or _iteration_, of the loop.
+2) **Condition:** The loop is repeated until the condition evaluates as _false_. The condition is a boolean expression.
+3) **Incrementing/Decrementing:** This part of the loop changes the iterator's value at every iteration of the loop.
+4) **Loop Body:** The loop body is the block of code that executes at every iteration of the loop.
+Here's an example of a _for_ loop:
+```Java
+for(int i = 0 /* i is the iterator */; i < 10 /* i < 10 is the condition*/; i = i + 1 /* This is the incrementation of the iterator*/)
+{
+  // This is the loop body.
+  System.out.println("Print!");
+}
+```
 ### While Loops:
 
-### For Loops:
+### Do While Loops:
+
