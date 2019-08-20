@@ -80,6 +80,40 @@ Now that we've made the constructors- the blueprint- we need to make an actual i
 * `ClassName()` is a call to a **Constructor**. A constructor is a block of code that creates an instance of a class. Typically, class attributes are assigned within the constructor.
   * If a constructor does not accept any arguments, this is called a **default constructor**. This creates a generic form of your object.
   * If a constructor accept arguments, then the attributes of the object will change based on the arguments passed into the constructor.
+  EXAMPLE FROM CLASS:
+```Java
+public class Classroom {
+    // Here, I will put the class attributes:
+    String teacherName;
+    int students;
+    // Default Constructor
+    public Classroom() {
+        teacherName = "NO NAME";
+        students = 0;
+    }
+    // Constructor
+    public Classroom(String teacher, int numberOfStudents) {
+        teacherName = teacher; // You have to assign Strings to Strings, ints to ints, etc.
+        students = numberOfStudents;
+    }
+
+    public static void main(String[] args) {
+        // We're using the default constructor to make an object (class1).
+        Classroom furkans_class = new Classroom();
+        // Printing out the "teacherName" attribute
+        System.out.println(furkans_class.teacherName);
+        // Printing out the "students" attribute
+        System.out.println(furkans_class.students);
+        // Interesting Constructor Used:
+        Classroom hrishis_class = new Classroom("Hrishi", 1000);
+        // Printing out the "teacherName" attribute
+        System.out.println(hrishis_class.teacherName);
+        // Printing out the "students" attribute
+        System.out.println(hrishis_class.students);
+    }
+}
+```
+
 ```Java
 public class CarModel {
     // These are variables that are attributes of the CarModel class.
