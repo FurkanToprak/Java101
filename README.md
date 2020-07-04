@@ -8,14 +8,14 @@ In the beginning, we'll start from the broadest concepts of Computer Science and
 Each lesson has a homework task attached at the very end. Please complete this material before proceeding to the next lesson.
 
 ## Available lessons:
-* [Lesson 1](lesson1.md): An Introduction to Programming
-* [Lesson 2](lesson2.md): Syntax
-* [Lesson 3](lesson3.md): Variables and Data Types
-* [Lesson 4](lesson4.md): Classes and Objects
-* [Lesson 5](lesson5.md): Libraries and Math in Java
+* [Lesson 1](lessons/lesson1.md): An Introduction to Programming
+* [Lesson 2](lessons/lesson2.md): Syntax
+* [Lesson 3](lessons/lesson3.md): Variables and Data Types
+* [Lesson 4](lessons/lesson4.md): Classes and Objects
+* [Lesson 5](lessons/lesson5.md): Libraries and Math in Java
+* [Lesson 6](lessons/lesson6.md): Conditions and Loops
 ## Coming soon:
-* [Lesson 6](lesson6.md): Conditions and Loops
-* [Lesson 7](lesson7.md): User Input and Printf
+* [Lesson 7](lessons/lesson7.md): User Input and Printf
 
 ## Contact Me:
 Don't hesitate to contact me if any of this material confuses you or you have any questions.
