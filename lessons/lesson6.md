@@ -1,10 +1,3 @@
----
-tags: [Java101]
-title: lesson6
-created: '2019-08-12T15:31:55.849Z'
-modified: '2019-08-12T19:22:11.816Z'
----
-
 # Java 101 | Lesson 6:
 ## Booleans:
 Let's review what booleans are. A `boolean` is a data type that can indicate whether something is `true` or `false`. `true` and `false` are similar to `yes` and `no`, or `on` and `off`.
@@ -144,15 +137,44 @@ For loops are used when the number of times we want to repeat a code is known. T
 2) **Condition:** The loop is repeated until the condition evaluates as _false_. The condition is a boolean expression.
 3) **Incrementing/Decrementing:** This part of the loop changes the iterator's value at every iteration of the loop.
 4) **Loop Body:** The loop body is the block of code that executes at every iteration of the loop.
-Here's an example of a _for_ loop:
+
+Here's an example of a `for` loop:
 ```Java
 for(int i = 0 /* i is the iterator */; i < 10 /* i < 10 is the condition*/; i = i + 1 /* This is the incrementation of the iterator*/)
 {
   // This is the loop body.
-  System.out.println("Print!");
+  System.out.print("Print! This is the following iteration number: ");
+  System.out.println(i);
 }
 ```
 ### While Loops:
+While loops are used when a piece of code needs to be repeated as long as a condition is true. There are two parts to a while loop, and one important thing to remember:
+1) **Condition:** The loop is repeated until the condition evaluates as _false_. The condition is a boolean expression.
+2) **Loop Body:** The loop body is the block of code that executes at every iteration of the loop.
 
+Below is an example of a `while` loop. The `i` variable is _not_ necessary, but I'm including it in order to make an equivalent to the `for` loop above.
+```Java
+int i = 0;
+while(i < 10 /* It is necessary to provide a boolean condition */) {
+  System.out.print("Print! This is the following iteration number: ");
+  System.out.println(i);
+  i = i + 1;
+}
+```
+**Remember:** While loops _loop_ as long as the boolean condition is true. The boolean condition does not have to be a numerical comparison. It can be _any_ boolean condition. In fact, this is true for `for` loops as well. If the boolean condition never updates, the loop will never exit. This is called an _inifinite loop_ and if unintended, will result in the rest of the program never terminating. Please be aware of this problem!
 ### Do While Loops:
+A `do while` loop is similar to a `while` loop and used when the loop body should execute at least once. The loop body, following `do` will execute once; then, the `while` condition will be checked (and so on). Below is the `do while` equivalent of the `while` loop above.
 
+```java
+i = 0;
+do {
+  // This is the loop body. This will execute at least once.
+  System.out.print("Print! This is the following iteration number: ");
+  System.out.println(i);
+  i = i + 1;
+} while (i < 10/* This is the condition */);
+// However, this will execute once!
+do {
+  System.out.priint("This will execute once.");
+} while(false);
+```

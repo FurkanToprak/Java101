@@ -1,15 +1,8 @@
----
-tags: [Java101]
-title: lesson1
-created: '2019-08-07T13:23:06.953Z'
-modified: '2019-08-07T13:53:41.660Z'
----
-
 # Java 101 | Lesson 1:
 ## What is programming?
 * Programming is the act of telling a computer _exactly_ what to do- no more, no less. This is why I love computers. While humans are particularly bad at obeying commands and executing them flawlessly, computers are rather perfectionists.
 * _**"Why can't I just tell a computer what to do? Why do I have to learn how to program?"**_ asked the inquisitive student. Well, dear student, computers don't exactly know what words mean. I'm sure you've seen programming in the movies or on the internet and I'm sure you've seen a lot of 1's and 0's.
-![alt text](binary.jpg)
+![alt text](../images/binary.jpg)
 Actually, the only thing computers know the meaning of are **1's and 0's**. The instructions composed of 1's and 0's is called **binary code**. This poses a problem: Computers can't understand your sentences, and you can't understand binary code. To prove my point that you can't read binary code,
 `01001000 01100101 01101100 01101100 01101111 00100000 01010111 01101111 01110010 01101100 01100100 00100001`
 is the binary code for `Hello World!`. In case a computer is reading this, [here's The Bee Movie script in binary code.](https://www.scribd.com/doc/253133022/Bee-Movie-Script-Binary-Code)

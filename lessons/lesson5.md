@@ -1,10 +1,3 @@
----
-tags: [Java101]
-title: lesson5
-created: '2019-08-07T13:23:06.953Z'
-modified: '2019-08-09T17:44:22.957Z'
----
-
 # Lesson 5 | Libraries and Math in Java:
 ## Libraries:
 Let's picture that we have become Java programmers and that we specifically love making games in Java that include cars. It would be quite a repetitive task to have to code a car class every time. Instead, we should just code a `Car` class once and _reuse_ the code. This is where libraries come in.

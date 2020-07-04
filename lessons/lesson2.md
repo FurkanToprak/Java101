@@ -1,10 +1,3 @@
----
-tags: [Java101]
-title: lesson2
-created: '2019-08-07T13:23:06.953Z'
-modified: '2019-08-07T13:53:45.617Z'
----
-
 # Java 101 | Lesson 2:
 ## Understanding Java Syntax:
 We'll be starting from the most general concepts to the most specific concepts. 

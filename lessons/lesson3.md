@@ -1,15 +1,8 @@
----
-tags: [Java101]
-title: lesson3
-created: '2019-08-07T13:23:06.953Z'
-modified: '2019-08-07T18:40:38.981Z'
----
-
 # Java 101 | Lesson 3:
 ## Variables:
 In computer science, **variable** is a name for a place in memory that can store values. Let's take a look at the diagram below.
 <br>
-![alt text](memory.png)
+![alt text](../images/memory.png)
 <br>
 Above, you can see a portion of memory with a predetermined size storing the number `5`. The variable, or portion of allocated memory, that is capable of storing numbers is called `a` in the diagram above. Appropriately named, `variables` can vary. `a` can just as easily contain any value, as long as it can store it within the size of its allocated memory.
 If we wanted to make a variable with name `a` and value `5` in java, all it would require would be:

@@ -1,10 +1,3 @@
----
-tags: [Java101]
-title: lesson4
-created: '2019-08-07T13:23:06.953Z'
-modified: '2019-08-07T13:53:55.355Z'
----
-
 # Java 101 | Lesson 4
 ## Introduction:
 Java is an **object-orientated** language. This means that **everything in Java is either a class, an instance of a class (an object), or an attribute of a class or object.**
@@ -36,7 +29,7 @@ Now, `objectVariable` is an instance of `ClassName`. Any property that `ClassNam
 ## Combining the Concepts:
 ### Creating a Class and Class Variables:
 Let's make this concrete with an example:
-![Alt text](car_blueprint.jpg)
+![Alt text](../images/car_blueprint.jpg)
 * If classes are the Java equivalent of blueprints, let's make a class called `CarModel` that represents a car.
   * When designing a class, we need to give the class attributes. We'll give the car the following attributes:
     * The name of the driver.
