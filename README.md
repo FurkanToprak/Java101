@@ -14,7 +14,6 @@ Each lesson has a homework task attached at the very end. Please complete this m
 * [Lesson 4](lessons/lesson4.md): Classes and Objects
 * [Lesson 5](lessons/lesson5.md): Libraries and Math in Java
 * [Lesson 6](lessons/lesson6.md): Conditions and Loops
-## Coming soon:
 * [Lesson 7](lessons/lesson7.md): User Input and Printf
 
 ## Contact Me:
